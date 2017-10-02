@@ -656,9 +656,12 @@ header {
 .works {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-top: 2px solid #cccccc;
   border-bottom: 2px solid #cccccc;
+  width: 1160px;
   margin-top: 79px;
+  margin-left: 100px;
 }
 .works a{
   padding: 55px;
