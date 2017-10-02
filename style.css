@@ -500,7 +500,6 @@ header {
   font-weight: 500;
   font-size: 55px;
   line-height: calc(55/55);
- 
 }
 .sliders p {
   font-size: 16px;
@@ -511,12 +510,30 @@ header {
 .long{
   background-image: url(img/sl1.jpg);
 }
+.long h2 {
+  width: 380px;
+}
+.long p{
+  width: 369px;
+}
 .maths{
   background-image: url(img/sl2.jpg);
 }
+.maths h2{
+  width: 517px;
+}
+.maths p{
+  width: 404px;
+}
 .only{
   background-image: url(img/sl3.jpg);
+}
+.only h2{
+  width: 406px;
 } 
+.only p{
+  width: 346px;
+}
 .blocks{
   display: flex;
   justify-content: space-around;
