@@ -699,6 +699,8 @@ header {
 .line {
   border: 1px solid #cccccc;
   margin-top: 80px;
+  width: 1220px;
+  margin-left: 100px;
 }
 .info{
   display: flex;
