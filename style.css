@@ -628,7 +628,7 @@ header {
 }
 .blocks{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-left: 140px;
   height: 398px;
 }
@@ -698,6 +698,7 @@ header {
 }
 .line {
   border: 1px solid #cccccc;
+  margin-top: 80px;
 }
 .info{
   display: flex;
@@ -764,7 +765,6 @@ header {
 
 }
 .stat {
-  
   width: 115px;
   font-size: 45px;
   font-weight: 700;
