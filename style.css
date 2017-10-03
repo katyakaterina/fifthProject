@@ -720,6 +720,50 @@ header {
 footer{
   display: flex;
 }
+/* modal */
+.write-us{
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  height: 590px;
+}
+.write-us h2{
+  align-self: baseline;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 500;
+
+}
+.write-us label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(16/18);
+
+}
+.write-us text-area{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(16/18);
+}
+.write-us input{
+  width: 340px;
+  height: 49px;
+  border: 2px solid #d7dcde;
+  border-radius: 4px;
+}
+.let input{
+  width: 760px;
+  height: 118px;
+}
+.send{
+  border: 1px solid #fb565a;
+  width: 260px;
+  height: 50px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #fb565a;
+  border-radius: 4px;
+}
 
 
 
