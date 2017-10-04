@@ -486,6 +486,7 @@ header {
   position: absolute;
   background: #fb565a;
 }
+
 .studio a::before{
   content: " ";
   width: 63px;
@@ -494,6 +495,7 @@ header {
   position: absolute;
   background: #fb565a;
 }
+
 .logo-nerds{
   flex-grow: 5;
 }
@@ -516,7 +518,6 @@ header {
   height: 545px;
   padding-top: 25px;
 }
-
 .sliders a {
   border: 1px solid #fb565a;
   width: 239px;
@@ -573,8 +574,8 @@ header {
 .only p{
   width: 346px;
 }
-.sliders{
-  display: none;
+.slides{
+  display: non;
 }
 .slider-item:nth-child(1) {
   background-image: url(img/sl1.jpg); 
@@ -600,13 +601,13 @@ header {
 .slider-item:nth-child(3){
   display: block;
 }
-#btn-1:checked ~ .sliders >.slider-item:nth-child(1) {
+#btn-1:checked ~ .slides .slider-item:nth-child(1) {
   display: block;
 }
-#btn-2:checked ~ .sliders >.slider-item:nth-child(2) {
+#btn-2:checked ~ .slides .slider-item:nth-child(2) {
   display: block;
 }
-#btn-3:checked ~ .sliders >.slider-item:nth-child(3) {
+#btn-3:checked ~ .slides .slider-item:nth-child(3) {
   display: block;
 }
 .radio-btn{
