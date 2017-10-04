@@ -603,13 +603,13 @@ header {
 .slider-item:nth-child(3){
   display: block;
 }
-#btn-1:checked ~ .slider > .slider-item:nth-child(1) {
+#btn-1:checked ~ .sliders {
   display: block;
 }
-#btn-2:checked ~ .slider > .slider-item:nth-child(2) {
+#btn-2:checked ~ .sliders .slider-item:nth-child(2) {
   display: block;
 }
-#btn-3:checked ~ .slider > .slider-item:nth-child(3) {
+#btn-3:checked ~ .sliders .slider-item:nth-child(3) {
   display: block;
 }
 .radio-btn{
