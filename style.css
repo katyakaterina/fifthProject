@@ -978,7 +978,7 @@ footer{
 }
 .ch-radio label{
   position: relative;
-  padding-left: 15px;
+  padding-left: 18px;
   padding-top: 27px;
 }
 .ch-radio label:before{
@@ -1098,6 +1098,7 @@ footer{
   background-color: #eeeeee;
   text-transform: uppercase;
   font-weight: 500;
+  margin-top: 35px;
 }
 .sort{
   display: inline-block;
