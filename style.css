@@ -560,7 +560,6 @@ header {
 .sliders{
   display: none;
 }
-
 .slider-item:nth-child(1) {
   background-image: url(img/sl1.jpg); 
   background-repeat: no-repeat;
@@ -594,8 +593,6 @@ header {
 #btn-3:checked ~ .sliders >.slider-item:nth-child(3) {
   display: block;
 }
-
-
 .radio-btn{
   margin-left: 50%;
 }
@@ -744,7 +741,6 @@ header {
   text-transform: none;
   padding: 20px 35px;
   position: relative;
-
 }
 .main-features li::before {
   content: " ";
@@ -765,16 +761,12 @@ header {
   color: #000000;
   text-transform: uppercase;
 }
-.stat{
-
-}
 .stat {
   width: 115px;
   font-size: 45px;
   font-weight: 700;
   color: #000000;
 }
-
 .stat p{
   font-size: 16px;
   line-height: calc(16/18); 
@@ -796,6 +788,53 @@ header {
 .address{
   margin-top: 81px;
 }
+.address{
+  position: relative;
+  padding-top: 1px;
+}
+.map {
+  margin-top: 82px;
+  margin-bottom: 68px;
+}
+.desc {
+  border: 2px solid white;
+  background-color: white;
+  margin-left: 140px;
+  width: 319px;
+  height: 309px;
+  position: absolute;
+  top: 135px;
+  left: 0px;
+}
+.desc h4{
+  font-size: 18px;
+  line-height: calc(30/18);
+  font-weight: 700;
+  color: #000000;
+  margin-left: 50px;
+}
+.desc p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(18/16);
+  color: #666666;
+  margin-left: 50px;
+}
+.desc a{
+  border: 1px solid #fb565a;
+  background-color: #fb565a;
+  border-radius: 4px;
+  padding: 19px 45px;
+  font-size: 16px;
+  line-height: calc(18/16);
+  font-weight: 500;
+  color: white;
+  width: 219px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 50px;
+}
 footer{
   display: flex;
   justify-content: center;
@@ -813,7 +852,6 @@ footer{
   top: 35px;
   left: 30px;
 }
-
 .circle-v {
   width: 90px;
   height: 90px;
@@ -898,13 +936,170 @@ footer{
   font-weight: 500;
 }
 /* catalog */
-
 .filter{
   flex-grow: 5;
   width: 260px;
   margin-left: 140px;
   margin-top: 60px;
+}
+.cost {
+  text-transform: uppercase;
+}
+.cost input{
+  width: 81px;
+  height: 38px;
+  border: 2px solid #eeeeee;
+  border-radius: 4px;
+  background-color: #eeeeee;
+}
+.cost .band {
+  width: 260px;
+  height: 80px;
+  border: 1px solid #eeeeee;
+  background-color: #eeeeee;
+}
 
+.net{
+  padding-top: 62px;
+}
+.net h3{
+  text-align: left;
+  text-transform: uppercase;
+}
+.features{
+  padding-top: 30px;
+}
+.features h3{
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 25px;
+}
+.ch-radio input{
+  display: none;
+}
+.ch-radio label{
+  position: relative;
+  padding-left: 25px;
+  padding-top: 30px;
+}
+.ch-radio label:after{
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: -14px;
+  width: 24px;
+  height: 24px;
+  border: 4px solid #a6a6a6;
+  border-radius: 50%;
+}
+.ch-radio input:checked + label:before{
+  position: absolute;
+  content: "";
+  top: 35px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #a6a6a6;
+  border-radius: 50%;
+  background-color: #a6a6a6;
+}
+.ch-radio{
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: calc(16/20);
+}
+.ch-gr input{
+  display: none;
+}
+.ch-gr label{
+  position: relative;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+.ch-gr label:after{
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: -11px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #a6a6a6;
+  border-radius: 4px;
+}
+.ch-gr input:checked + label:before{
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  top: 13px;
+  left: -11px;
+  border: 2px solid #a6a6a6;
+  background-color: #a6a6a6;
+}
+.ch-gr{
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: calc(16/20);
+}
+.checkbox-group{
+  margin-left: 15px;
+}
+/* style rang */
+
+.band[type="range"] {
+  display: none;
+}
+.band[type="range"] {
+  position: relative;
+}
+.band:after[type="range"]{
+  position: absolute;
+  content: " ";
+  width: 260px;
+  height: 80px;
+  background-color: gray;
+  border: 1px solid gray;
+} 
+/* style radio button index */
+.radio-btn input{
+  display: none;
+}
+.radio-btn label{
+  position: relative;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+.radio-btn label:before{
+  position: absolute;
+  content: " ";
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.radio-btn input:checked + label:after{
+  position: absolute;
+  content: " ";
+  width: 4px;
+  height: 4px;
+  border: 4px solid #a6a6a6;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+}
+.show{
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  width: 260px;
+  height: 50px;
+  padding: 18px;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .sort{
   display: inline-block;
@@ -913,7 +1108,7 @@ footer{
 .sort h3{
   float: left;
   width: 405px;
-
+  text-transform: uppercase;
 }
 .sort button{
   margin-top: 18px;
@@ -952,9 +1147,7 @@ footer{
   flex-grow: 1;
   width: 900;
   margin-top: 60px;
- 
 }
-
 .catalog-item{
   width: 45%;
   margin-top: 60px;
@@ -993,12 +1186,10 @@ footer{
   text-decoration: none;
   margin-left: 80px;
 }
-
 .descr{
   position: absolute;
   margin-top: -230px;
 }
-
 #sedona .descr {
   border: 1px solid #e9e9e9;
   background-color: #e9e9e9;
@@ -1032,18 +1223,54 @@ footer{
   float: left;
   margin: 7px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* pages ctg */
+.pagination{
+  margin-left: 36%;
+  margin-top: 60px;
+}
+.one {
+  border: 3px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 19px 20px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.two{
+  border: 3px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 19px 20px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: black;
+  background-color:  #e1e1e1;
+  font-weight: 500;
+}
+.three{
+  border: 3px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 19px 20px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: black;
+  background-color:  #e1e1e1;
+  font-weight: 500;
+}
+.next{
+  border: 3px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 19px 80px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: black;
+  background-color:  #e1e1e1;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 
 
