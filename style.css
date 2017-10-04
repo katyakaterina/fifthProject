@@ -495,7 +495,6 @@ header {
   position: absolute;
   background: #fb565a;
 }
-
 .logo-nerds{
   flex-grow: 5;
 }
@@ -518,7 +517,7 @@ header {
   height: 545px;
   padding-top: 25px;
 }
-.sliders a {
+.slider-item a {
   border: 1px solid #fb565a;
   width: 239px;
   height: 50px;
@@ -533,14 +532,14 @@ header {
   text-transform: uppercase;
   margin-left: 140px;
 }
-.sliders h2 {
+.slider-item h2 {
   color: #000000;
   font-weight: 500;
   font-size: 55px;
   line-height: calc(55/55);
   margin-left: 140px;
 }
-.sliders p {
+.slider-item p {
   font-size: 16px;
   line-height: calc(24/16);
   font-weight: 400;
@@ -574,21 +573,24 @@ header {
 .only p{
   width: 346px;
 }
-.slider-item{
-  display: non;
+.sliders{
+  display: none;
 }
 .slider-item:nth-child(1) {
-  background-image: url(img/sl1.jpg); 
+  background-image: url(img/sl1.jpg);
+  height: 545px; 
   background-repeat: no-repeat;
   background-position: 100%;
 }
 .slider-item:nth-child(2) {
   background-image: url(img/sl2.jpg); 
+  height: 545px;
   background-repeat: no-repeat;
   background-position: 100%;
 }
 .slider-item:nth-child(3) {
   background-image: url(img/sl3.jpg);
+  height: 545px;
   background-repeat: no-repeat;
   background-position: 100%;
 }
@@ -601,17 +603,17 @@ header {
 .slider-item:nth-child(3){
   display: block;
 }
-#btn-1:checked ~ .sliders > .slider-item:nth-child(1) {
+#btn-1:checked ~ .slider > .slider-item:nth-child(1) {
   display: block;
 }
-#btn-2:checked ~ .sliders > .slider-item:nth-child(2) {
+#btn-2:checked ~ .slider > .slider-item:nth-child(2) {
   display: block;
 }
-#btn-3:checked ~ .sliders > .slider-item:nth-child(3) {
+#btn-3:checked ~ .slider > .slider-item:nth-child(3) {
   display: block;
 }
 .radio-btn{
-  margin-left: 50%;
+  
 }
 .radio-btn input{
   display: none;
