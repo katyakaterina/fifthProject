@@ -478,6 +478,22 @@ header {
   text-transform: uppercase;
   color: black;
 }
+.shop a::before{
+  content: " ";
+  width: 75px;
+  height: 2px;
+  top: 115px;
+  position: absolute;
+  background: #fb565a;
+}
+.studio a::before{
+  content: " ";
+  width: 63px;
+  height: 2px;
+  top: 115px;
+  position: absolute;
+  background: #fb565a;
+}
 .logo-nerds{
   flex-grow: 5;
 }
