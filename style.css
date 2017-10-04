@@ -578,19 +578,16 @@ header {
 }
 .slider-item:nth-child(1) {
   background-image: url(img/sl1.jpg);
-  height: 545px; 
   background-repeat: no-repeat;
   background-position: 100%;
 }
 .slider-item:nth-child(2) {
   background-image: url(img/sl2.jpg); 
-  height: 545px;
   background-repeat: no-repeat;
   background-position: 100%;
 }
 .slider-item:nth-child(3) {
   background-image: url(img/sl3.jpg);
-  height: 545px;
   background-repeat: no-repeat;
   background-position: 100%;
 }
@@ -622,6 +619,7 @@ header {
   position: relative;
   padding-top: 15px;
   padding-left: 25px;
+  left: 50%;
 }
 .radio-btn label:before{
   position: absolute;
