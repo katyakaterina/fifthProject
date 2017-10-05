@@ -962,7 +962,6 @@ footer{
 }
 /* catalog */
 .filter{
-  flex-grow: 5;
   width: 260px;
   margin-left: 140px;
   margin-top: 60px;
@@ -1134,7 +1133,7 @@ footer{
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 .sort{
   display: inline-block;
@@ -1175,11 +1174,11 @@ footer{
 }
 .ctg{
   display: flex;
+  justify-content: space-between;
 }
 .catalog-items{
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   width: 900;
   margin-top: 60px;
 }
