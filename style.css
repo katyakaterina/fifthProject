@@ -718,7 +718,9 @@ header {
 .info{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+}
+.main-features{
+  margin-top: 30px;
 }
 .main-features h2 {
   font-size: 45px;
@@ -744,7 +746,7 @@ header {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 15px 0;
   margin: 0;
 }
 .main-features li {
@@ -753,7 +755,7 @@ header {
   font-weight: 400;
   color: #000000;
   text-transform: none;
-  padding: 20px 35px;
+  padding: 15px 35px;
   position: relative;
 }
 .main-features li::before {
@@ -762,7 +764,7 @@ header {
   height: 2px;
   position: absolute;
   background: #fb565a;
-  top: 30px;
+  top: 25px;
   left: 1px;
 }
 .logo{
@@ -774,8 +776,11 @@ header {
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 .stat {
+  display: inline-block;
   width: 115px;
   font-size: 45px;
   font-weight: 700;
@@ -807,7 +812,6 @@ header {
   padding-top: 1px;
 }
 .map {
-  margin-top: 82px;
   margin-bottom: 68px;
 }
 .desc {
@@ -816,7 +820,7 @@ header {
   width: 319px;
   height: 309px;
   position: absolute;
-  top: 135px;
+  top: 60px;
   left: 0px;
 }
 .desc h4{
