@@ -458,6 +458,12 @@ header {
   background-color: #eeeeee;
   color: #000000;
 }
+.works a {
+  opacity: 1;
+}
+.works:hover a{
+  opacity: 0.6;
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -600,7 +606,7 @@ header {
 .slide:nth-child(3){
   display: block;
 }
-#btn-1:checked ~ .sliders > .slide:nth-child(1){
+#btn-1:checked ~ .sliders{
   display: block;
 }
 #btn-2:checked ~ .sliders .slide:nth-child(2) {
@@ -1109,6 +1115,7 @@ footer{
   left: 4px;
 }
 .show{
+  border: 1px solid #eeeeee;
   width: 260px;
   height: 50px;
   padding: 18px;
@@ -1180,18 +1187,30 @@ footer{
   padding-bottom: 20px;
 }
 .frame{
+  opacity: 1;
   position: relative;
   border-top: 40px solid #e9e9e9;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   width: 360px;
 }
-#sedona .frame {
+#sedona .frame{
+  opacity: 1;
+  position: relative;
+  border-top: 40px solid #e9e9e9;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  width: 360px;
+}
+
+#sedona .frame:hover {
+  opacity: 1;
   position: relative;
   border-top: 40px solid #4d4d4d;
   width: 360px;
 }
 #sedona a{
+  opacity: 1;
   background-color: #fb565a;
   border-radius: 4px;
   padding: 19px 63px;
@@ -1202,17 +1221,32 @@ footer{
   text-decoration: none;
   margin-left: 80px;
 }
+#sedona:hover a{
+  opacity: 1;
+  background-color: #fb565a;
+  border-radius: 4px;
+  padding: 19px 63px;
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin-left: 80px;
+}
+
 .descr{
   position: absolute;
   margin-top: -230px;
 }
-#sedona .descr {
+#sedona .descr:hover {
+  opacity: 1;
   background-color: #e9e9e9;
   color: black;
   width: 358px;
   height: 228px;
 }
-#sedona .top-btn{
+#sedona .top-btn:hover{
+  opacity: 1;
   width: 14px;
   height: 14px;
   background: #e1e1e1;
