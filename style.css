@@ -970,6 +970,9 @@ footer{
 .cost {
   text-transform: uppercase;
 }
+.cost form{
+  width: 260px;
+}
 .cost input{
   width: 81px;
   height: 38px;
@@ -997,6 +1000,13 @@ footer{
   padding: 0;
   margin: 0;
   padding-bottom: 25px;
+}
+.beginning{
+  text-align: left;
+}
+.finish{
+  text-align: right;
+  margin-top: -38px;
 }
 .ch-radio input{
   display: none;
@@ -1053,11 +1063,12 @@ footer{
 .ch-gr input:checked + label:after{
   position: absolute;
   content: "";
-  width: 20px;
-  height: 20px;
-  top: 13px;
-  left: -11px;
-  border: 2px solid #a6a6a6;
+  width: 6px;
+  height: 6px;
+  top: 21px;
+  left: -3px;
+  border-radius: 2px;
+  border: 1px solid #a6a6a6;
   background-color: #a6a6a6;
 }
 .ch-gr{
@@ -1071,7 +1082,7 @@ footer{
 /* style rang */
 
 .band[type="range"] {
-  display: none;
+  display: non
 }
 .band[type="range"] {
   position: relative;
@@ -1174,7 +1185,7 @@ footer{
 }
 .catalog-item{
   width: 45%;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .catalog-item h3{
   padding-top: 35px;
