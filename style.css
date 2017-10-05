@@ -513,12 +513,11 @@ header {
 .basket{
   flex-grow: 3;
 }
-.slider-item{
+.slide{
   height: 545px;
   padding-top: 25px;
 }
-.slider-item a {
-  border: 1px solid #fb565a;
+.slide a {
   width: 239px;
   height: 50px;
   padding: 20px 54px;
@@ -532,81 +531,82 @@ header {
   text-transform: uppercase;
   margin-left: 140px;
 }
-.slider-item h2 {
+.slide h2 {
   color: #000000;
   font-weight: 500;
   font-size: 55px;
   line-height: calc(55/55);
   margin-left: 140px;
 }
-.slider-item p {
+.slide p {
   font-size: 16px;
   line-height: calc(24/16);
   font-weight: 400;
   margin-left: 140px;
   margin-bottom: 43px;
 }
-.long{
+.slide:nth-child(1){
   background-image: url(img/sl1.jpg);
 }
-.long h2 {
+.slide:nth-child(1) h2 {
   width: 380px;
 }
-.long p{
+.slide:nth-child(1) p{
   width: 369px;
 }
-.maths{
+.slide:nth-child(2){
   background-image: url(img/sl2.jpg);
 }
-.maths h2{
+.slide:nth-child(2) h2{
   width: 517px;
 }
-.maths p{
+.slide:nth-child(2) p{
   width: 404px;
 }
-.only{
+.slide:nth-child(3){
   background-image: url(img/sl3.jpg);
 }
-.only h2{
+.slide:nth-child(3) h2{
   width: 406px;
 } 
-.only p{
+.slide:nth-child(3) p{
   width: 346px;
 }
-.sliders{
+/* slider */
+.sliders {
   display: none;
 }
-.slider-item:nth-child(1) {
+.slide:nth-child(1){
   background-image: url(img/sl1.jpg);
   background-repeat: no-repeat;
   background-position: 100%;
 }
-.slider-item:nth-child(2) {
+.slide:nth-child(2) {
   background-image: url(img/sl2.jpg); 
   background-repeat: no-repeat;
   background-position: 100%;
 }
-.slider-item:nth-child(3) {
+.slide:nth-child(3) {
   background-image: url(img/sl3.jpg);
   background-repeat: no-repeat;
   background-position: 100%;
 }
-.slider-item:nth-child(1){
+.slide:nth-child(1){
   display: block;
 }
-.slider-item:nth-child(2){
+.slide:nth-child(2){
   display: block;
 }
-.slider-item:nth-child(3){
+.slide:nth-child(3){
   display: block;
 }
-#btn-1:checked ~ .sliders {
+#btn-1:checked ~ .sliders > .slide:nth-child(1){
   display: block;
 }
-#btn-2:checked ~ .sliders .slider-item:nth-child(2) {
+#btn-2:checked ~ .sliders .slide:nth-child(2) {
   display: block;
 }
-#btn-3:checked ~ .sliders .slider-item:nth-child(3) {
+#btn-3:checked ~ .sliders .slide:nth-child(3) {
   display: block;
 }
 .radio-btn{
@@ -682,7 +682,6 @@ header {
   line-height: calc(18/16);
   font-weight: 500;
   color: white;
-  border: 1px solid #fb565a;
   background-color: #fb565a;
   border-radius: 4px;
   text-decoration: none;
@@ -693,7 +692,6 @@ header {
   line-height: calc(18/16);
   font-weight: 500;
   color: white;
-  border: 1px solid #00ca74;
   background-color: #00ca74;
   border-radius: 4px;
   padding: 19px 40px;
@@ -705,7 +703,6 @@ header {
   line-height: calc(18/16);
   font-weight: 500;
   color: white;
-  border: 1px solid #efc84a;
   background-color: #efc84a;
   border-radius: 4px;
   padding: 19px 40px;
@@ -814,7 +811,6 @@ header {
   margin-bottom: 68px;
 }
 .desc {
-  border: 2px solid white;
   background-color: white;
   margin-left: 140px;
   width: 319px;
@@ -838,7 +834,6 @@ header {
   margin-left: 50px;
 }
 .desc a{
-  border: 1px solid #fb565a;
   background-color: #fb565a;
   border-radius: 4px;
   padding: 19px 45px;
@@ -851,6 +846,9 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   margin: 50px;
+}
+.tell{
+  margin-bottom: 60px;
 }
 footer{
   display: flex;
@@ -1107,12 +1105,11 @@ footer{
   left: 4px;
 }
 .show{
-  border: 1px solid #eeeeee;
-  border-radius: 4px;
   width: 260px;
   height: 50px;
   padding: 18px;
   background-color: #eeeeee;
+  border-radius: 4px;
   text-transform: uppercase;
   font-weight: 500;
   margin-top: 35px;
@@ -1191,7 +1188,6 @@ footer{
   width: 360px;
 }
 #sedona a{
-  border: 1px solid #fb565a;
   background-color: #fb565a;
   border-radius: 4px;
   padding: 19px 63px;
@@ -1207,7 +1203,6 @@ footer{
   margin-top: -230px;
 }
 #sedona .descr {
-  border: 1px solid #e9e9e9;
   background-color: #e9e9e9;
   color: black;
   width: 358px;
@@ -1246,8 +1241,8 @@ footer{
 }
 .one {
   border: 3px solid #e1e1e1;
-  border-radius: 5px;
-  padding: 19px 20px;
+  border-radius: 3px;
+  padding: 16px 20px;
   width: 50px;
   height: 50px;
   text-decoration: none;
@@ -1256,8 +1251,8 @@ footer{
 }
 .two{
   border: 3px solid #e1e1e1;
-  border-radius: 5px;
-  padding: 19px 20px;
+  border-radius: 3px;
+  padding: 16px 20px;
   width: 50px;
   height: 50px;
   text-decoration: none;
@@ -1267,8 +1262,8 @@ footer{
 }
 .three{
   border: 3px solid #e1e1e1;
-  border-radius: 5px;
-  padding: 19px 20px;
+  border-radius: 3px;
+  padding: 16px 20px;
   width: 50px;
   height: 50px;
   text-decoration: none;
@@ -1278,8 +1273,8 @@ footer{
 }
 .next{
   border: 3px solid #e1e1e1;
-  border-radius: 5px;
-  padding: 19px 80px;
+  border-radius: 3px;
+  padding: 16px 80px;
   width: 50px;
   height: 50px;
   text-decoration: none;
