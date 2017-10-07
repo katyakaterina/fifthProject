@@ -606,7 +606,7 @@ header {
 .slide:nth-child(3){
   display: block;
 }
-#btn-1:checked ~ .sliders{
+#btn-1:checked ~ .sliders {
   display: block;
 }
 #btn-2:checked ~ .sliders .slide:nth-child(2) {
@@ -1284,8 +1284,9 @@ footer{
 }
 /* pages ctg */
 .pagination{
-  margin-left: 36%;
   margin-top: 60px;
+  margin-left: 6%;
+  text-align: center;
 }
 .one {
   border: 3px solid #e1e1e1;
