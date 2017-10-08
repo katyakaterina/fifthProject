@@ -520,8 +520,7 @@ header {
   flex-grow: 3;
 }
 .slide{
-  height: 430px;
-  padding-top: 55px;
+  height: 434px;
 }
 .slide a {
   width: 239px;
@@ -543,7 +542,7 @@ header {
   font-size: 55px;
   line-height: calc(55/55);
   margin-left: 140px;
-  margin-top: 45px;
+  padding-top: 65px;
 }
 .slide p {
   font-size: 16px;
@@ -604,9 +603,9 @@ header {
 }
 .radio-btn label{
   position: relative;
-  padding-top: 195px;
+  padding-top: 180px;
   padding-left: 34px;
-  left: 45%;
+  left: 46%;
 }
 .radio-btn label:before{
   position: absolute;
