@@ -618,15 +618,15 @@ header {
   background-color: #ffffff;
   border-radius: 50%;
 }
-.radio-btn input:checked + label:after{
+.radio-btn input:checked ~ label:after{
   position: absolute;
   content: " ";
   width: 4px;
   height: 4px;
   border: 2px solid #a6a6a6;
   border-radius: 50%;
-  top: 80px;
-  left: 50%;
+  top: 85px;
+  left: 22px;
 }
 .blocks{
   display: flex;
