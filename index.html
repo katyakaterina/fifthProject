@@ -25,13 +25,6 @@
            </nav>
            <nav>
              <div class="slider">
-              <div class="radio-btn"> 
-                 <input type="radio" id="btn-1" name="one-1" checked>
-                 <label for="btn-1"></label>
-                 <input type="radio" id="btn-2" name="one-1">
-                 <label for="btn-2"></label>
-                 <input type="radio" id="btn-3" name="one-1">
-                 <label for="btn-3"></label>
                 <div class="sliders">
                   <div class="slide">
                      <h2> Долго, дорого, скурпулезно. </h2>
@@ -49,8 +42,15 @@
                    <a href=""> Узнать больше </a>
                 </div>
              </div>
-          </div>
-        </div>
+             <div class="radio-btn"> 
+                 <input type="radio" id="btn-1" name="one-1" checked>
+                 <label for="btn-1"></label>
+                 <input type="radio" id="btn-2" name="one-1">
+                 <label for="btn-2"></label>
+                 <input type="radio" id="btn-3" name="one-1">
+                 <label for="btn-3"></label>
+             </div>
+           </div>
          </nav>
       </div>
   </header>
@@ -106,7 +106,6 @@
             </div>
             </div>
         </div>
-
         <div class="works">
              <a href="">
              <img src="img/logo-1.png">
@@ -129,11 +128,21 @@
                <h4> Nerds design studio </h4>
                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8  </p>
                <p class="tell">тел.+7(812)2757575</p>
-               <a href=""> Напишите нам </a>
+               <button class="write-us"> Напишите нам </button>
                </div>
              </div>
            </div>
        </div>
+       <div class="modal">
+          <h2>Напишите нам</h2>
+          <form action="" method="get"> 
+             <label> Ваше имя: <input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
+             <label> Ваш e-mail: <input type="text" name="email" placeholder="Для отправки ответа"></label>
+             <text-area class="let"> Текст письма: <input type="text" name="letter" placeholder="В свободной форме"></text-area>
+             <button class="send">Отправить</button>
+          </form>
+       </div>
+       <script type="text/javascript" src="javascript.js"></script>
      </body>
     <footer>
         <div class="social">
@@ -152,13 +161,4 @@
         <p> Скидка 10% для друзей из социальных сетей. </p>
         </div>
     </footer>
-    <div class="write-us">
-      <h2>Напишите нам</h2>
-      <form action="" method="get"> 
-        <label> Ваше имя: <input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
-        <label> Ваш e-mail: <input type="text" name="email" placeholder="Для отправки ответа"></label>
-        <text-area class="let"> Текст письма: <input type="text" name="letter" placeholder="В свободной форме"></text-area>
-        <button class="send">Отправить</button>
-      </form>
-    </div>
 </html>

@@ -580,7 +580,7 @@ header {
 }
 /* slider */
 .sliders {
-  display: none;
+  display: non;
 }
 .slide:nth-child(1){
   background-image: url(img/sl1.jpg);
@@ -843,11 +843,12 @@ header {
   color: #666666;
   margin-left: 50px;
 }
-.desc a{
+.desc button{
+  border: 1px solid #fb565a;
   background-color: #fb565a;
   border-radius: 4px;
-  padding: 19px 45px;
-  font-size: 16px;
+  padding: 15px 45px;
+  font-size: 15px;
   line-height: calc(18/16);
   font-weight: 500;
   color: white;
@@ -855,10 +856,10 @@ header {
   height: 50px;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 50px;
+  margin-left: 50px;
 }
 .tell{
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 footer{
   display: flex;
@@ -899,11 +900,17 @@ footer{
   margin: 10px;
 }
 /* modal */
-.write-us{
+.open{
+  display: block;
+}
+.modal{
+  display: none;
+}
+.modal{
   width: 960px;
   height: 590px;
 }
-.write-us h2{
+.modal h2{
   margin-left: 100px;
   margin-top: 60px;
   font-size: 45px;
@@ -911,7 +918,7 @@ footer{
   font-weight: 500;
 
 }
-.write-us label {
+.modal label {
   float: left;
   margin-left: 100px;
   margin-bottom: 40px;
@@ -921,13 +928,13 @@ footer{
   line-height: calc(16/18);
 
 }
-.write-us text-area{
+.modal text-area{
   margin-left: 100px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(16/18);
 }
-.write-us input{
+.modal input{
   width: 340px;
   height: 49px;
   margin-top: 15px;
