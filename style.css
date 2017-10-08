@@ -900,11 +900,11 @@ footer{
   margin: 10px;
 }
 /* modal */
-.open{
-  display: block;
-}
 .modal{
   display: none;
+}
+.open{
+  display: block;
 }
 .modal{
   width: 960px;
