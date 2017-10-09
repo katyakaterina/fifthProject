@@ -603,9 +603,9 @@ header {
 }
 .radio-btn label{
   position: relative;
-  padding-top: 180px;
   padding-left: 34px;
-  left: 46%;
+  top: 315px;
+  left: 47%;
 }
 .radio-btn label:before{
   position: absolute;
@@ -618,7 +618,7 @@ header {
   background-color: #ffffff;
   border-radius: 50%;
 }
-.radio-btn input:checked ~ label:after{
+.radio-btn input:checked + label:after{
   position: absolute;
   content: " ";
   width: 4px;
