@@ -6,6 +6,6 @@
      modal.classList.toggle("open");
 
           });
-
+  
         
           

@@ -889,6 +889,9 @@ footer{
 .modal{
   width: 960px;
   height: 590px;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 1px 5px rgba(235,5,97,1);
+  margin-left: 18%;
 }
 .modal h2{
   margin-left: 100px;
@@ -896,7 +899,6 @@ footer{
   font-size: 45px;
   line-height: 1;
   font-weight: 500;
-
 }
 .modal label {
   float: left;
