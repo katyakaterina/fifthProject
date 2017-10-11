@@ -220,10 +220,16 @@
   <div class="modal">
           <h2>Напишите нам</h2>
           <form action="" method="get"> 
-             <label> Ваше имя: <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста"></label>
-             <label> Ваш e-mail: <input type="text" name="email" id="email" placeholder="Для отправки ответа"></label>
-             <text-area class="let"> Текст письма: <input type="text" name="letter" name="letter" placeholder="В свободной форме"></text-area>
-             <input type="submit" name="Отправить" class="send"></input>
+             <label for="name"> Ваше имя: 
+                <input type="text" name="login" id="name" placeholder="Представьтесь, пожалуйста" value="" required>
+             </label>
+             <label for="email"> Ваш e-mail: 
+                <input type="text" name="email" id="email" placeholder="Для отправки ответа" value="" required> 
+             </label>
+             <text-area class="let"> Текст письма: 
+                <input type="text" name="letter" id="letter" placeholder="В свободной форме" required>
+             </text-area>
+             <button type="submit" name="send" class="send">Отправить</button>
           </form>
        </div>
   <script type="text/javascript" src="javascript.js"></script>

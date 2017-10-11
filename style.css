@@ -893,6 +893,13 @@ footer{
   box-shadow: 0px 0px 1px 5px rgba(235,5,97,1);
   margin-left: 18%;
 }
+.modal form{
+  position: relative;
+  width: 962px;
+}
+.modal form span{
+  position: absolute;
+}
 .modal h2{
   margin-left: 100px;
   margin-top: 60px;
@@ -928,7 +935,7 @@ footer{
   height: 118px;
   margin-left: 100px;
 }
-.modal input.send {
+.send {
   margin-left: 100px;
   margin-top: 40px;
   border: 1px solid #fb565a;
