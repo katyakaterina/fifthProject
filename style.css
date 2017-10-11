@@ -928,7 +928,7 @@ footer{
   height: 118px;
   margin-left: 100px;
 }
-.send{
+.modal input.send {
   margin-left: 100px;
   margin-top: 40px;
   border: 1px solid #fb565a;
