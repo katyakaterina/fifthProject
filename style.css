@@ -897,14 +897,18 @@ footer{
   position: relative;
   width: 962px;
 }
+.modal span.err{
+  opacity: 1;
+}
 .modal form span{
   position: absolute;
   top: 82px;
   left: 100px;
   color: #fb565a;
   text-transform: uppercase;
-  opacity: 1;
+  opacity: 0;
 }
+
 .modal h2{
   margin-left: 100px;
   margin-top: 60px;
