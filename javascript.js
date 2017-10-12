@@ -23,17 +23,19 @@
      } else {
      	login.focus();
      }
+     });
+
+    window.addEventListener("keydown", function(e) {
+    	if(e.keyCode === 27) {
+    		modal.classList.remove('open');
+    	}
+    });
 
 
-     
-
-          });
-
- 
  	form.addEventListener("submit", function(e) {
  	e.preventDefault();
 
- 	if(!login.value || !email.value) {
+ 	if(!email.value) {
  		error.classList.add("err");
  	
  

@@ -903,7 +903,7 @@ footer{
 .modal form span{
   position: absolute;
   top: 82px;
-  left: 100px;
+  right: 322px;
   color: #fb565a;
   text-transform: uppercase;
   opacity: 0;
