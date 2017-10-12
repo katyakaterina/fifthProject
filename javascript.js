@@ -31,23 +31,32 @@
     	}
     });
 
-
- 	form.addEventListener("submit", function(e) {
+    window.addEventListener("keyup", function(e) {
+    	if(e.keyCode === 13) {
+    		form.addEventListener("submit", function(e){;
+    	});
+    	}
+    });
+    
+    form.addEventListener("submit", function(e) {
  	e.preventDefault();
 
  	if(!email.value) {
  		error.classList.add("err");
- 	
- 
- 	 } else {
+    
+    }else {
  	 	localStorage.setItem("Ваше имя",login.value);
- 		console.log("не отправилась");
- 	
+ 		form.addEventListener("submit", function(e){;
+    	});
+ 	  
  	}
-    
-    });
 
+    });
     
+    
+   
+
+
 
 
 
