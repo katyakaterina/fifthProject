@@ -899,6 +899,11 @@ footer{
 }
 .modal form span{
   position: absolute;
+  top: 82px;
+  left: 100px;
+  color: #fb565a;
+  text-transform: uppercase;
+  opacity: 1;
 }
 .modal h2{
   margin-left: 100px;

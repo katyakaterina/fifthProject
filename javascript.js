@@ -14,13 +14,19 @@
      login.focus();
 
           });
+
  form.addEventListener("submit", function(e) {
+ 	e.preventDefault();
  	
 
- 	if(!login.value || !email.value) {
+ 	if(!login.value) {
  		console.log("пусто")
- 	} 
  	
+ 
+ 	 } else {
+ 		console.log("не отправилась");
+ 	
+ 	}
  	
  });
  
