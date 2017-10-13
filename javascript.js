@@ -38,21 +38,29 @@
     	}
     });
     
-    form.addEventListener("submit", function(e) {
- 	e.preventDefault();
+    
 
- 	if(!email.value) {
- 		error.classList.add("err");
+ 	form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    if(!email.value) {
+        error.classList.add("err");
     
     }else {
- 	 	localStorage.setItem("Ваше имя",login.value);
- 		form.addEventListener("submit", function(e){;
-    	});
- 	  
- 	}
+        localStorage.setItem("Ваше имя",login.value);
+        form.addEventListener("submit", function(e){;
+        });
+      
+    }
 
     });
     
+    
+   
+
+
+
+
     
    
 
